@@ -5,6 +5,11 @@ and a node server
 
 **Authors:** Gregory T. & Max Lin
 
+## Requirements:
+
+1. Node/iojs
+2. electron see: [electron.atom.io](http://electron.atom.io)
+
 ## How to run it on your local machine
 
 1. run `npm install`
