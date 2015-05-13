@@ -102,9 +102,18 @@ appAtomShell.on('window-all-closed', function() {
 // This method will be called when Electron has done everything
 // initialization and ready for creating browser windows.
 appAtomShell.on('ready', function() {
-  console.log('READY is called');
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1400, height: 900,  fullScreen: true});
+  mainWindow = new BrowserWindow({
+    width: 1400,
+    height: 900,
+    'node-integration': false,
+    fullScreen: true
+  });
+
+  mainWindow.openDevTools({
+    detached: true
+  });
+
 
   // and load the index.html of the app.
   mainWindow.loadUrl('http://localhost:' + config.port);
