@@ -96,7 +96,7 @@ var mainWindow = null;
 // Quit when all windows are closed.
 appAtomShell.on('window-all-closed', function() {
   if (process.platform != 'darwin')
-    shell.quit();
+    appAtomShell.quit();
 });
 
 // This method will be called when Electron has done everything
