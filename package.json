@@ -2,7 +2,7 @@
   "name": "fluxxor-test",
   "version": "0.0.0",
   "scripts": {
-    "watch-js": "watchify public/javascripts/main.js -o public/javascripts/bundle.js",
+    "watch-js": "watchify public/javascripts/main.js -o public/javascripts/bundle.js -v",
     "build-js": "browserify public/javascripts/main.js -o public/javascripts/bundle.js"
   },
   "main": "app.js",
