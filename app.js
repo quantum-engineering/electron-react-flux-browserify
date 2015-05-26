@@ -104,7 +104,7 @@ appAtomShell.on('window-all-closed', function() {
 appAtomShell.on('ready', function() {
   console.log('READY is called');
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1400, height: 900,  fullScreen: true});
+  mainWindow = new BrowserWindow({width: 1400, height: 900, fullScreen: true, 'node-integration': false});
 
   // and load the index.html of the app.
   mainWindow.loadUrl('http://localhost:' + config.port);
